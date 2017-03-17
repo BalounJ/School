@@ -1,4 +1,4 @@
-package hanoi;
+package hanoi_bfs_dfs;
 
 import java.util.LinkedList;
 import java.util.Queue;
