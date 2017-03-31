@@ -1,8 +1,6 @@
 package dama;
 
-import java.util.Arrays;
-
-public class Pole {
+class Pole {
 	byte pole[][];
 	
 	public Pole(byte[][] pole) {
