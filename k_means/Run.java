@@ -25,9 +25,9 @@ public class Run {
 				
 				);
 		List<Point> centers = Arrays.asList(
-				new Point(0, 0),
+				//new Point(0, 0),
 				new Point(2, 0),
-				new Point(5, 0)
+				new Point(4, 0)
 				);
 		
 		Kmeans kmeans = new Kmeans(points, centers);
@@ -38,12 +38,14 @@ public class Run {
 		
 		print(gl1);
 		
+		System.out.println("centers: "+kmeans.centers.toString());
+		
 		System.out.println("****************************");
 		
 		List<List<Point>> gl2 = kmedoids.getGroups();
 		
 		print(gl2);
-	
+		System.out.println("centers: "+kmedoids.centers.toString());
 	}
 
 	private static void print(List<List<Point>> gl) {
